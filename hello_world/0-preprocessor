@@ -1,2 +1,2 @@
 #!/bin/bash
-$CFILLE = Ahmed.c
+gcc -E $CFILE.c

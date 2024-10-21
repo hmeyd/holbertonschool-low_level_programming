@@ -1,2 +1,2 @@
 #!/bin/bash
-fprint ($CFILE ,cisfun)
+gcc -o cisfun $CFILE

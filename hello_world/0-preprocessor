@@ -1,2 +1,2 @@
 #!/bin/bash
-sprintf(filename, "$CFILE.c")
+gcc -E $CFILE

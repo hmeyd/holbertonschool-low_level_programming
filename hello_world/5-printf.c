@@ -1,7 +1,9 @@
 #include <stdio.h>
+/**
+ * main - Entry point of the program
+ */
 int main(void)
 {
-/* Ceci est un commentaire sur une seule ligne*/
 printf("with proper grammar, but the outcome is a piece of art,\n");
 return (0);
 }

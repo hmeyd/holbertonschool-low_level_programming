@@ -1,2 +1,2 @@
 #!/bin/bash
-gcc -E -o pgcd.c x.o
+$CFILLE = Ahmed.c

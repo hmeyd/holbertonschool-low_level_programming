@@ -9,7 +9,10 @@ int main(void)
 char c;
 for (c = 'a'; c <= 'z'; ++c)
 {
-putchar(c, grep('q', 'e'));
+if (c != 'q' || c != 'e')
+{
+putchar(c)
+}
 }
 putchar('\n');
 return (0);

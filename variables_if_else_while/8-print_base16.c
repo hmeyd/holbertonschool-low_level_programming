@@ -8,10 +8,10 @@ int main(void)
 char i;
 for (i = 0; i <= 15; ++i)
 {
-if (i<11)
+if (i<=9)
 putchar(i + '0');
 else 
-putchar(i - 10 + 'a');
+putchar(i - 9 + 'a');
 }
 putchar('\n');
 return (0);

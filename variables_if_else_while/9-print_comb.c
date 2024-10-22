@@ -14,4 +14,5 @@ putchar(';');
 putchar(' ');
 }
 putchar('\n');
-return 
+return (0)
+}

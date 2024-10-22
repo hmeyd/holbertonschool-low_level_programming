@@ -10,7 +10,7 @@ int main(void)
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
 	/* your code goes there */
-	int a=1,n1=n;
+	int a=1 ; n1=n;
 	while (n > 10)
 	{
 		a=a*10;

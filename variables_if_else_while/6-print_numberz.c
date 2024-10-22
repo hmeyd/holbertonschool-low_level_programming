@@ -6,8 +6,10 @@
 int main(void)
 {
 char c;
-for (c = 0; c <= 9; ++c)
+int i;
+for (i = 0; i <= 9; ++i)
 {
+c="i";
 putchar(c);
 }
 putchar('\n');

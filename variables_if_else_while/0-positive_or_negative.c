@@ -13,7 +13,7 @@ int main(void)
 	n = rand() - RAND_MAX / 2;
 	if (n > 0)
 	{
-		echo '''98 is positive''';
+		printf(n > 0);
 	}
 			else if (n < 0)
 				{

@@ -1,8 +1,6 @@
 #include <stdio.h>
-/**
- *main -4 puts.c
- * Ceci est un commentaire sur une seule ligne
- *
+/** main -Entry point
+ * Return: Always 0 (Success)
 */
 int main(void)
 {

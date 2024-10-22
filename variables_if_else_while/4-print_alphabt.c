@@ -6,9 +6,9 @@
 int main(void)
 {
 char c;
-for (c = 'a'; c <= 'z'; ++c; grep(q, e))
+for (c = 'a'; c <= 'z'; ++c)
 {
-putchar(c);
+putchar(c, grep(q, e));
 }
 putchar('\n');
 return (0);

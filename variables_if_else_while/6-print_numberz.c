@@ -5,11 +5,12 @@
 */
 int main(void)
 {
-char charValue[]="stringValueX";
+//char charValue[]="stringValueX";
+char i;
 for (i = 0; i <= 9; ++i)
 {
-charValue[11]= i + '0';
-putchar(charValue);
+//charValue[11]= i + '0';
+putchar(i);
 }
 putchar('\n');
 return (0);

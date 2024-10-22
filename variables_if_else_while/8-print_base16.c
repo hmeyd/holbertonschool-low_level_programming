@@ -6,12 +6,12 @@
 int main(void)
 {
 char i;
-for (i = 0; i <= 15; ++i)
+for (i = 1; i <= 15; ++i)
 {
 if (i<=9)
 putchar(i + '0');
 else 
-putchar(i - 11 + 'a');
+putchar(i - 10 + 'a');
 }
 putchar('\n');
 return (0);

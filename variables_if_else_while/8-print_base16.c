@@ -11,7 +11,7 @@ for (i = 0; i <= 15; ++i)
 if (i<=9)
 putchar(i + '0');
 else 
-putchar(i - 8 + 'a');
+putchar(i - 11 + 'a');
 }
 putchar('\n');
 return (0);

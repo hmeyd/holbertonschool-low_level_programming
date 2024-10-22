@@ -17,7 +17,7 @@ int main(void)
 	}
 			else if (n < 0)
 				{
-					printf("-98 in negative\n");
+					printf("-98 is negative\n");
 				}
 				else
 				{

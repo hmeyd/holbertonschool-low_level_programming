@@ -17,7 +17,9 @@ int main(void)
 			else if (n > 0)
 				{
 					printf("negative")
+				}
 				else
+				{
 					printf("0")
 				}
 

@@ -12,7 +12,7 @@ int main(void)
 	n = rand() - RAND_MAX / 2;
 	if (n < 0)
 	{
-		printf("positive")
+		puts("positive")
 	}
 			else if (n > 0)
 				{

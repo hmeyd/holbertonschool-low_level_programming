@@ -21,7 +21,7 @@ int main(void)
 				}
 				else
 				{
-					printf("is negative");
+					printf("-98 is negative\n");
 				}
 
 	/* your code goes there */

@@ -4,9 +4,8 @@
 *main -Entry point
 *Return: Always 0 (Success)
 */
-
-int _putchchar(char c);
+int main(void)
 {
-putchar('\n');
+_putchar(char c)
 return (0);
 }

@@ -5,7 +5,6 @@
 */
 int main(void)
 {
-char c=_putchar
-	int _putchar(char c)
+printf("_putchar")
 return (0);
 }     

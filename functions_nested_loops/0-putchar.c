@@ -5,7 +5,7 @@
 */
 int main(void)
 {
-char i = _putchar
+char i = "_putchar"
 printf(i);
 return (0);
 }     

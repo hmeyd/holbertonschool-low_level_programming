@@ -11,16 +11,16 @@ int _abs(int n)
 	int a;
 	if (n > 0)
 	{
-		putchar(n);
+		_putchar(n);
 	}
 	else if (n < 0)
 	{
 		a=abs(n);
-		putchar(a);
+		_putchar(a);
 	}
 		else
 		{
-			putchar('0');
+			_putchar('0');
 		}
 		_putchar('\n');
 return (0);

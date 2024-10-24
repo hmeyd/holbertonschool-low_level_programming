@@ -1,26 +1,28 @@
 #include "main.h"
 #include <stdlib.h>
 /**
- * print_sign - Vérifie le singe du nombre
- * @n: Le nombre à vérifier le singe
+ * _abs - camculer le valeur abs
+ * @n: Le nombre
  *
- * Return:1 si le nombre est positive -1 si c'est negative ou miniscule,0 sinon
+ * Return:retun la valeur absoulue du nombre et 0 s'il est nulle
  */
 int _abs(int n)
 {
+
 	int a;
+
 	if (n > 0)
 	{
-		_putchar(n);
+		return (n);
 	}
 	else if (n < 0)
 	{
-		a=abs(n);
-		_putchar(a);
+		a = abs(n);
+		return (a);
 	}
 		else
 		{
-			_putchar('0');
+		return (0);
 		}
 		_putchar('\n');
 return (0);

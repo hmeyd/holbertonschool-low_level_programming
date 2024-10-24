@@ -1,9 +1,9 @@
 #include "main.h"
 /**
- * _islower - Vérifie si un caractère est en minuscule ou un majuscule 
+ * _isalpha - Vérifie si un caractère est en minuscule ou majuscule
  * @c: Le caractère à vérifier
  *
- * Return: 1 si le caractère est une lettre minuscule ou majuscule , 0 sinon
+ * Return: 1 si le caractère est une lettre minuscule ou miniscule, 0 sinon
  */
 int _isalpha(int c)
 {

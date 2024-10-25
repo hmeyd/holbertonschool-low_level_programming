@@ -1,5 +1,5 @@
 #include "main.h"
-#include <stdio.h>
+#include <stdlib.h>
 /**
  * _abs - camculer le valeur abs
  * @n: Le nombre
@@ -9,9 +9,21 @@
 int print_last_digit(int n)
 {
 
-	int a;
-	if (n > 10 || n < -10)
-
-	a = n % 10;
+	int a; int p;
+	if (n < -10 || n > 10)
+	{
+	p = abs(n);
+	a = p % 10;
 	return (a);
+	}
+	else if (-10 < n || n < 10)
+	{
+	a = abs(n);
+        return (a);
+	}
+	else
+	{
+	return(n);
+	}
+
 }

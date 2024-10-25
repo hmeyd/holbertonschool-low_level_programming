@@ -9,6 +9,7 @@
 int print_last_digit(int n)
 {
 	int p;
+
 	if (n > 9)
 	{
 		p = n % 10;
@@ -19,13 +20,12 @@ int print_last_digit(int n)
 		p = n % 10;
 	}
 	else if (n > -9 && n < 0)
-	{	
+	{
 		p = -n;
 	}
 	else
 	{
 		p = n;
-	
 	}
 	if (p < 0)
 		p = -p;

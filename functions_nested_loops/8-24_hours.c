@@ -18,7 +18,7 @@ int i , j , p1 , p2 , l1 , l2;
 		{
                 		_putchar((i / 10) + '0');
 				_putchar((i % 10) + '0');
-                		_putchar(':')
+                		_putchar(':');
 				_putchar(( j / 10) + '0');
 				_putchar((j % 10) + '0');
 				_putchar('\n');

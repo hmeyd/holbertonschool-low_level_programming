@@ -16,36 +16,12 @@ int i , j , p1 , p2 , l1 , l2;
 		
 		for (j = 0;j <= 59; j++)
 		{
-				if (i < 10)
-				{
-                		_putchar('0');
-                		_putchar(i + '0');
-                		_putchar(':');
-                		}
-                		else
-				{
-				p1 = i / 10;
-                                l1 = i % 10;
-                		_putchar(p1 + '0');
-				_putchar(l1 + '0');
-                		_putchar(':');
-				}
-				 if (j < 10)
-                		{
-                		_putchar('0');
-                		_putchar(j + '0');
-                		}
-                		else
-                		{
-				p2 = j / 10;
-				l2 = j % 10;
-                		_putchar(p2 + '0');
-				_putchar(l2 + '0');
-				_putchar(j + '0');
-                		}
+                		_putchar((i / 10) + '0');
+				_putchar((i % 10) + '0');
+                		_putchar(':')
+				_putchar(( j / 10) + '0');
+				_putchar((j % 10) + '0');
 				_putchar('\n');
 
 		}
-}
-_putchar('\n');
 }

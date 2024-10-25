@@ -25,7 +25,10 @@ int print_last_digit(int n)
 	else
 	{
 		p = n;
+	
 	}
+	if (p < 0)
+		p = -p;
 	_putchar(p + '0');
 	return (p);
 }

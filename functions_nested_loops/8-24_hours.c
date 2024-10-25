@@ -24,7 +24,10 @@ int i , j;
                 		}
                 		else
 				{
-                		_putchar(i + '0');
+				p1 = i / 10;
+                                l1 = i % 10;
+                		_putchar(p1 + '0');
+				_putchar(l1 + '0');
                 		_putchar(':');
 				}
 				 if (j < 10)
@@ -34,7 +37,11 @@ int i , j;
                 		}
                 		else
                 		{
-                		_putchar(j + '0');
+				p2 = j / 10;
+				l2 = j % 10;
+                		_putchar(p2 + '0');
+				_putchar(l2 + '0');
+				_putchar(j + '0');
                 		}
 				_putchar('\n');
 

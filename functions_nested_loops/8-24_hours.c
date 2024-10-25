@@ -14,17 +14,6 @@ int i , j;
         for (i = 0;i <= 23; i++)
 	{
 		
-		if (i < 10)
-		{
-		_putchar('0');
-		_putchar(i + '0');
-		_putchar(':');
-		}
-		else
-		{	
-		_putchar(i + '0');
-                _putchar(':');
-		}
 		for (j = 0;j <= 59; j++)
 		{
 				if (i < 10)
@@ -38,6 +27,18 @@ int i , j;
                 		_putchar(j + '0');
                 		_putchar(':');
 				}
-		}
+				 if (i < 10)
+                		{
+                		_putchar('0');
+                		_putchar(i + '0');
+                		_putchar(':');
+                		}
+                		else
+                		{
+                		_putchar(i + '0');
+                		_putchar(':');
+                		}
+				}
+				_putchar('\n');
 }
 }

@@ -18,8 +18,12 @@ int print_last_digit(int n)
 		n = -n;
 		p = n % 10;
 	}
-	else
+	else if (n > -9 && n < 0)
 	{	
+		p = -n;
+	}
+	else
+	{
 		p = n;
 	}
 	_putchar(p + '0');

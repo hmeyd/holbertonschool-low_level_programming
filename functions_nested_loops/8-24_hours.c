@@ -38,7 +38,8 @@ int i , j;
                 		_putchar(i + '0');
                 		_putchar(':');
                 		}
-				}
-				_putchar('\n');
+
+		}
 }
+_putchar('\n');
 }

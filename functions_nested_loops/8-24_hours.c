@@ -21,27 +21,24 @@ int i , j;
                 		_putchar('0');
                 		_putchar(j);
                 		_putchar(':');
-				_putchar('\n');
                 		}
                 		else
 				{
                 		_putchar(j);
                 		_putchar(':');
-				_putchar('\n');
 				}
 				 if (i < 10)
                 		{
                 		_putchar('0');
                 		_putchar(i);
                 		_putchar(':');
-				_putchar('\n');
                 		}
                 		else
                 		{
                 		_putchar(i);
                 		_putchar(':');
-				_putchar('\n');
                 		}
+				_putchar('\n');
 
 		}
 }

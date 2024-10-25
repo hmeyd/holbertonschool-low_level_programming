@@ -27,7 +27,7 @@ int i , j;
                 		_putchar(i + '0');
                 		_putchar(':');
 				}
-				 if (i < 10)
+				 if (j < 10)
                 		{
                 		_putchar('0');
                 		_putchar(j + '0');

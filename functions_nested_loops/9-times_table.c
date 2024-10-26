@@ -19,7 +19,7 @@ for (i = 0; i <= 9; i++)
 		if (x <= 9)
 		{
 		_putchar(x + '0');
-		if (j < 8)
+		if (j <= 8)
 		{
 		_putchar(',');
 		}
@@ -30,7 +30,7 @@ for (i = 0; i <= 9; i++)
 		{
 		_putchar((x / 10) + '0');
 		_putchar((x % 10) + '0');
-		if (j < 8)
+		if (j <= 8)
                 {
                 _putchar(',');
                 }

@@ -24,12 +24,12 @@ for (i = 0; i <= 9; i++)
 		_putchar(' ');
 		}
 		else
-		{ 
+		{
 		_putchar((x % 10) + '0');
 		_putchar((x / 10) + '0');
-                _putchar(',');
-                _putchar(' ');
+		_putchar(',');
+		_putchar(' ');
 		}
 	}
 }
-
+}

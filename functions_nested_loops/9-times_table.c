@@ -34,7 +34,6 @@ for (i = 0; i <= 9; i++)
                 {
                 _putchar(',');
                 }
-		_putchar(',');
 		_putchar(' ');
 		}
 	}

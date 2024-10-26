@@ -16,20 +16,21 @@ for (i = 0; i <= 9; i++)
 	for (j = 0; j <= 9; j++)
 	{
 		x = j * i;
-		if (x < 9)
+		if (x <= 9)
 		{
-		_putchar(i + '0');
+		_putchar(x + '0');
 		_putchar(',');
 		_putchar(' ');
 		_putchar(' ');
 		}
 		else
 		{
-		_putchar((x % 10) + '0');
 		_putchar((x / 10) + '0');
+		_putchar((x % 10) + '0');
 		_putchar(',');
 		_putchar(' ');
 		}
 	}
+_putchar('\n');
 }
 }

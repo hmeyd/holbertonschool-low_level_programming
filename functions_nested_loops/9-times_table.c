@@ -19,7 +19,10 @@ for (i = 0; i <= 9; i++)
 		if (x <= 9)
 		{
 		_putchar(x + '0');
+		if (j < 8)
+		{
 		_putchar(',');
+		}
 		_putchar(' ');
 		_putchar(' ');
 		}

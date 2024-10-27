@@ -16,7 +16,7 @@ for (i = 0; i <= 9; i++)
 	for (j = 0; j <= 9; j++)
 	{
 		x = j * i;
-		if (x <= 9 || j > 0)
+		if (x <= 9 && j > 0)
 		{
 		_putchar(',');
 		_putchar(' ');

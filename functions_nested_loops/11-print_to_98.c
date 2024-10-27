@@ -52,6 +52,6 @@ else
 	}
 }
 }
--putchar('\n');
+_putchar('\n');
 }
 

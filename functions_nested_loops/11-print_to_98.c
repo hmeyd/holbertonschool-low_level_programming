@@ -1,57 +1,41 @@
 #include "main.h"
 
 /**
- * print_to_98 -  prints all natural numbers from n to 98
- * @n: the bigenning number
- *
+ * print_to_98 - Imprime tous les nombres naturels de n à 98
+ * @n: Le nombre de départ
  */
 void print_to_98(int n)
 {
-	int i;
+int i, num;
 
-if (n > 98)
+for (i = n; i != 98; i += (n > 98) ? -1 : 1)
 {
-	for (i = n; i >= 98; i--)
+	if (i < 0)
 	{
-			if (i > 100)
-			{
-			_putchar((i / 100) + '0');
-			_putchar(((i / 10) % 10) + '0');
-			_putchar((i % 10) + '0');
-			}
-			else
-			{
-			_putchar((i / 10) + '0');
-			_putchar((i % 10) + '0');
-			}
+	_putchar('-');
+	num = -i;
+	}
+	else
+	{
+	num = i;
+	}
+	if (num >= 100)
+	{
+	_putchar((num / 100) + '0');
+	_putchar(((num / 10) % 10) + '0');
+	}
+	else if (num >= 10)
+	{
+	_putchar((num / 10) + '0');
+	}
+	_putchar((num % 10) + '0');
+	if (i != 98)
+	{
+	_putchar(',');
+	_putchar(' ');
 	}
 }
-else
-{
-	for (i = n; i <= 98; i++)
-	{
-	if (i < -100)
-	{
-	_putchar((i / 100) + '0');
-	_putchar(((i / 100) % 10) + '0');
-	_putchar((i % 10) + '0');
-	}
-	else if (i < -10 && i > -99)
-	{
-	_putchar((i / 10) + '0');
-	_putchar((i % 10) + '0');
-	}
-	else if (i < 10 && i > (-10))
-	{
-	_putchar(i + '0');
-	}
-	else if (i < 98 && i > 10)
-	{
-	_putchar((i / 10) + '0');
-	_putchar((i % 10) + '0');
-	}
-}
-}
+_putchar('9');
+_putchar('8');
 _putchar('\n');
 }
-

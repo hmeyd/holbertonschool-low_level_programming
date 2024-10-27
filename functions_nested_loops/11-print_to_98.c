@@ -13,9 +13,11 @@ if (n > 98)
 {
 	for (i = n; i >= 98; i--)
 	{
-		if (i < 10)
+		if (n > 100)
 		{
-			_putchar(i + '0');
+			_putchar((i /100) + '0');
+			_putchar((i / 10) + '0');
+			_putchar((i % 10) + '0');
 			_putchar('\n');
 		}
 		else
@@ -32,11 +34,18 @@ else
 	{
 		if (i < 10)
 		{
+			if (i < 0)
+			{
+				_putchar('-');
+			}
 			_putchar(i + '0');
 			_putchar('\n');
 		}
 		else
-		{
+			if (i < 0)
+			{
+				_putchar('-');
+			}
 			_putchar((i / 10) + '0');
 			_putchar((i % 10) + '0');
 			_putchar('\n');

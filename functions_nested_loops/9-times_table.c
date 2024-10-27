@@ -25,10 +25,10 @@ for (i = 0; i <= 9; i++)
 		}
 		else if (x > 9 && j != 0)
 		{
-                _putchar(',');
+		_putchar(',');
 		_putchar(' ');
 		_putchar((x / 10) + '0');
-                _putchar((x % 10) + '0');
+		_putchar((x % 10) + '0');
 		}
 		else
 		{

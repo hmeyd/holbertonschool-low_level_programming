@@ -42,6 +42,7 @@ else
 			_putchar('\n');
 		}
 		else
+		{
 			if (i < 0)
 			{
 				_putchar('-');

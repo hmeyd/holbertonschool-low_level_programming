@@ -1,12 +1,14 @@
 /**
- * main - check the code
+ * add - additionner deux numeros
  *
- * Return: Always 0.
+ * @a: le premiere chiffre à additionner
+ * @b: le deuxieme chiffre à additionner
+ * Return: le resultat de l'additionne.
  */
-int add(a , b)
+int add(int a, int b)
 {
-    int a, b;
+	int r;
 
-    r = a +b;
-    return (r);
+r = a + b;
+return (r);
 }

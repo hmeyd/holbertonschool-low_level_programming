@@ -7,7 +7,7 @@
  */
 void print_to_98(int n)
 {
-	int i;
+	int i, k, l;
 
 if (n > 98)
 {
@@ -15,8 +15,10 @@ if (n > 98)
 	{
 		if (n > 100)
 		{
+			k = i / 100;
+			l = k * 100;
 			_putchar((i / 100) + '0');
-			_putchar((i - (i / 100) *100)/ 10) + '0');
+			_putchar((i - l / 10) + '0');
 			_putchar((i % 10) + '0');
 			_putchar('\n');
 		}

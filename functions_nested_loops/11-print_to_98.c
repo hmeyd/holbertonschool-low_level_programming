@@ -18,7 +18,7 @@ if (n > 98)
 			k = i / 100;
 			l = k * 100;
 			_putchar((i / 100) + '0');
-			_putchar((i - l / 10) + '0');
+			_putchar((i - (l / 10)) + '0');
 			_putchar((i % 10) + '0');
 			_putchar('\n');
 		}

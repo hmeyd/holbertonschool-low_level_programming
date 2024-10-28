@@ -1,7 +1,7 @@
 #include "main.h"
 /**
  * print_line - prints the numbers of times the character _
- *
+ * @n: le nombre de caractere _
  *
  * void
  */

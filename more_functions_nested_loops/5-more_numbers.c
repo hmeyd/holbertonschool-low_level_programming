@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * more_numbers - prints the numbers, from 1 to 14,14 time
+ * more_numbers - prints the numbers, from 0 to 14,14 time
  *
  *
  * Return: void.
@@ -11,7 +11,7 @@ int i, j, a;
 
 for (j = 1; j <= 10; j++)
 {
-	for (i = 1; i <= 14; i++)
+	for (i = 0; i <= 14; i++)
 {
 	if (i > 9)
 	{

@@ -1,7 +1,11 @@
 #include "main.h"
 #include <stdio.h>
 
-int main ()
+/**
+*main -Entry point
+*Return: Always 0 (Success)
+*/
+int main(void)
 {
 int i;
 
@@ -21,7 +25,7 @@ printf("Buzz");
 }
 else
 {
-printf("%d",i);
+printf("%d", i);
 }
 if (i != 100)
 putchar(' ');

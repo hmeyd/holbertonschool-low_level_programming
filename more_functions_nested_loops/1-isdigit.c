@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * _isupper - reconait les chiffre de 0 à 9
+ * _isdigit - reconait les chiffre de 0 à 9
  *@c: digit number
  *
  * Return: return 1 if c is digit and return 0 if is not

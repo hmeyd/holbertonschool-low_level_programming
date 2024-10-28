@@ -23,6 +23,7 @@ else
 {
 printf("%d",i);
 }
+if (i != 100);
 putchar(' ');
 }
 putchar('\n');

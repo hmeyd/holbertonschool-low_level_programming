@@ -12,7 +12,7 @@ while (str[len] != '\0')
 {
 len++;
 }
-while (i != len + 1)
+while (i != len)
 {
 if (i % 2 == 0)
 {

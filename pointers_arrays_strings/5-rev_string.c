@@ -15,8 +15,8 @@ len++;
 }
 while (i < len / 2)
 {
-sit = s[len - i -1];
-s[len - i -1] = s[i];
+sit = s[len - i - 1];
+s[len - i - 1] = s[i];
 s[i] = sit;
 i++;
 }

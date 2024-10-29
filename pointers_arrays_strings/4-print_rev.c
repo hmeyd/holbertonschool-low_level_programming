@@ -12,7 +12,7 @@ while (s[i] != '\0')
 {
 i = i + 1;
 }
-while ((i - a) != 0)
+while ((i - a + 1) != 0)
 {
 _putchar(s[i - a]);
 a = a + 1;

@@ -14,7 +14,7 @@ i = i + 1;
 }
 while ((i - a + 1) != 0)
 {
-_putchar(s[i - a - 1]);
+_putchar(s[i - a]);
 a = a + 1;
 }
 _putchar('\n');

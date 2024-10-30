@@ -29,7 +29,7 @@ k = 10 * k;
 }
 if (f == 1)
 {
-return (a * k * (si[j] -48) + b);
+return (si[j] -48);
 }
 else
 {

@@ -9,11 +9,10 @@
 int _atoi(char *s)
 {
 int i = 0, si = 1, r = 0, f = 0;
-
 while (s[i] != '\0')
 {
-if (s[i] == '-' && f != 1)
-si = -1 * si;
+if (s[i] == '-' && (s[i + 1] >= '0' && s[i + 1] <= '9'))
+si = -1;
 if (s[i] >= '0' && s[i] <= '9')
 {
 f = 1;
@@ -23,8 +22,5 @@ else if (f == 1)
 break;
 i++;
 }
-if (f == 1)
-return (r *si);
-else
-return (0);
+return r * si;
 }

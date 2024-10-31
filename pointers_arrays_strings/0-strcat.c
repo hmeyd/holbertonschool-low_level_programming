@@ -1,11 +1,11 @@
 #include "main.h"
 /**
- * *_strcat - reconait les entier
- * @dest:la phrase a fusionner 
- * @stc: à utiliser
+ * *_strcat - fusionner deux string
+ * @dest:la phrase a fusionner
+ * @src: à utiliser
  * Return: fusionner deux ²chaine de caractere
  */
-char *_strcat (char *dest, char *src)
+char *_strcat(char *dest, char *src)
 {
 int i = 0, j = 0;
 while (dest[i] != '\0')

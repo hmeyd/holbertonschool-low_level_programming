@@ -3,7 +3,7 @@
  * *_strncat - fusionner deux string
  * @dest:la phrase a fusionner
  * @src: à utiliser n bite
- * n: le nombre d'octet à utiliser
+ * @n: le nombre d'octet à utiliser
  * Return: fusionner deux chaine de caractere
  */
 char *_strncat(char *dest, char *src, int n)

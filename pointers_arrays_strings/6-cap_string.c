@@ -10,7 +10,8 @@ char *cap_string(char *str)
 int i = 0;
 while (str[i] != '\0')
 {
-if (str[i] == ' '|| str[i] == ',' || str[i] == ';' || i == 0 || str[i] =='.' || str[i] == '!' || str[i] == '?' || str[i] == '"' || str[i] == '(' || str[i] ==')' || str[i] =='{' || str[i] == '}')
+str[0] = str[0] - 32;
+if (str[i] == ' '|| str[i] == ',' || str[i] == ';' || str[i] =='.' || str[i] == '!' || str[i] == '?' || str[i] == '"' || str[i] == '(' || str[i] ==')' || str[i] =='{' || str[i] == '}')
 {
 if (str[i + 1] <= 'z' && str[i + 1] >= 'a')
 {

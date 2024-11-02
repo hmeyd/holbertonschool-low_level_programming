@@ -1,10 +1,10 @@
 #include "main.h"
 /**
- * reverse_array - prints a string in reverse
+ * string_toupper - prints a string in reverse
  *
- * @a: l'array à afficher en sens inverse
- * @n: nmbre d'element
- * void
+ * @str: l'array à afficher en sens inverse
+ * 
+ * Return: le string
  */
 char *string_toupper(char *str)
 {

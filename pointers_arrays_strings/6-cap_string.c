@@ -19,6 +19,9 @@ str[i + 1] = str[i + 1] - 32;
 }
 i++;
 }
+if (str[0] <= 'z' && str[0] >= 'a')
+{
 str[0] = str[i + 1] - 32;
+}
 return (str);
 }

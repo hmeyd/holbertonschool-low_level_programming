@@ -1,10 +1,10 @@
 #include "main.h"
 /**
- * *_strncpy - prints n elements
+ * *_strcmp - prints n elements
  *
- * @dest: char le chain de charactere
- * @src: l'element
- * @n: le nombre d'octet
+ * @s1: char le chain de charactere
+ * @s2: l'element
+ *
  * Return: la copie du chaine de caractere
  */
 int _strcmp(char *s1, char *s2)

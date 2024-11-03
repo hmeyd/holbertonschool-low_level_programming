@@ -1,8 +1,8 @@
 #include "main.h"
 /**
- * cap_string - prints a string in reverse
+ * *leet - codding a string
  *
- * @str: l'array à afficher en sens inverse
+ * @str: l'array à afficher codé
  * Return:le string
  */
 char *leet(char *str)

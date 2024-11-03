@@ -15,7 +15,7 @@ if (str[0] <= 'z' && str[0] >= 'a')
 {
 str[0] = str[0] - 32;
 }
-for (j = 0; j <= 12)
+for (j = 0; j <= 12; j++)
 {
 if (separators[j] == str[i])
 {

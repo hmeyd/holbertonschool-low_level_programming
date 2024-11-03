@@ -7,7 +7,7 @@
  */
 char *cap_string(char *str)
 {
-char s = " \t\n,;.!?\"(){}"
+char separators[] = " \t\n,;.!?\"(){}";
 int i = 0;
 while (str[i] != '\0')
 {
@@ -17,7 +17,7 @@ str[0] = str[0] - 32;
 }
 for (j = 0; j <= 12)
 {
-if (s[j] == str[i])
+if (separators[j] == str[i])
 {
 if (str[i + 1] <= 'z' && str[i + 1] >= 'a')
 {

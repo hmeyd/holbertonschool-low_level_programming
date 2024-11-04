@@ -4,8 +4,8 @@
  * _strchr - locates a character in a string
  * @s: the string
  * @c: le charcteur à localiser
- * 
- * Returns: first occurrence of the character c in the string s, or NULL
+ *
+ * Return: first occurrence of the character c in the string s, or NULL
  */
 char *_strchr(char *s, char c)
 {

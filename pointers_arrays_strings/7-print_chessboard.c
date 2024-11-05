@@ -11,18 +11,18 @@ void print_chessboard(char (*a)[8])
 {
 int i, j;
 char *b = "rkbqkbkr";
-for (i = 1; i <= 8; i++)
+for (i = 0; i <= 7; i++)
 {
-        for (j = 1; j <= 8; j++)
+        for (j = 0; j <= 7; j++)
         {
-                if (i == 1)
-                        a[i][j] = b[j - 1];
-		else if (i == 2)
+                if (i == 0)
+                        a[i][j] = b[j];
+		else if (i == 1)
 			a[i][j] = 'p';
-		else if (i == 7)
+		else if (i == 6)
 			a[i][j] = 'P';
-		else if (i == 8)
-			a[i][j] = b[j - 1] -32;
+		else if (i == 7)
+			a[i][j] = b[j] -32;
 		else
 			a[i][j] = ' ';
 		_putchar(a[i][j]);

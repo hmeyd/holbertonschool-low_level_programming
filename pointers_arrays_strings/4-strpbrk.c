@@ -1,9 +1,9 @@
 #include "main.h"
 #include <stddef.h>
 /**
- * _strspn - locates a character in a string
+ * _strpbrk - locates a character in a string
  * @s: the string
- * @c: le charcteur à localiser
+ * @accept: le charcteur à localiser
  *
  * Return: first occurrence of the character c in the string s, or NULL
  */
@@ -15,9 +15,9 @@ int i, j;
 	{
 		for (j = 0; accept[j] != '\0'; j++)
 		{
-                	if (s[i] == accept[j])
+			if (s[i] == accept[j])
 			{
-                	return (&s[i]);
+			return (&s[i]);
 			}
 		}
 	}

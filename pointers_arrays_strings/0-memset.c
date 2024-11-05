@@ -4,7 +4,7 @@
  * @s: pointeur à remplir
  * @b:c'est un string
  * @n: le nombre d'element
- * Returns: pointer to the memory area
+ * Return: pointer to the memory area
  */
 char *_memset(char *s, char b, unsigned int n)
 {

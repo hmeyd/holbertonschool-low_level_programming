@@ -1,10 +1,10 @@
 #include "main.h"
 /**
  * _memcpy - fills memory with a constant byte
- * @dset: pointeur à remplir
+ * @dest: pointeur à remplir
  * @src:c'est un string
  * @n: le nombre d'element
- * Returns: pointer to the memory area
+ * Return: pointer to the memory area
  */
 char *_memcpy(char *dest, char *src, unsigned int n)
 {

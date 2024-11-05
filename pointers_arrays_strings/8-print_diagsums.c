@@ -1,5 +1,5 @@
 #include "main.h"
-#include <stddef.h>
+#include <stdio.h>
 /**
  * print_diagsums - locates a character in a string
  * @a: the matrix

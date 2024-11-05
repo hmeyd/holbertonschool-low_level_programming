@@ -7,20 +7,19 @@
  *
  * Return: first occurrence of the character c in the string s, or NULL
  */
-unsigned int _strspn(char *s, char *accept)
+char *_strpbrk(char *s, char *accept)
 {
-int k, h, r = 0; 
+int i, j;
 
-	for (k = 0; s[k] != '\0' && s[k] != ' '; k++)
+	for (i = 0; s[i] != '\0'; i++)
 	{
-		for (h = 0; accept[h] != '\0'; h++)
+		for (j = 0; accept[j] != '\0'; j++)
 		{
-			if (accept[h] == s[k])
+                	if (s[i] == accept[j])
 			{
-				r++;
-				break;
+                	return (&s[i]);
 			}
 		}
 	}
-	return (r);
+return (0);
 }

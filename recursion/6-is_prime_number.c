@@ -20,7 +20,7 @@ return (prime_helper(n, guess + 1));
  * @n: Le nombre dont on veut savoir s'il est primaire
  * Return: 1 si c'est primaire, ou -1 sinon
  */
-int is_prime_rumber(int n)
+int is_prime_number(int n)
 {
 if (n < 0)
         return (-1);

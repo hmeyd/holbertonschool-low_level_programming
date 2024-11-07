@@ -13,7 +13,7 @@ if (n == 1)
 if (guess < n)
 {
 if (n % guess == 0)
-        return (0);
+	return (0);
 return (prime_helper(n, guess + 1));
 }
 return (1);

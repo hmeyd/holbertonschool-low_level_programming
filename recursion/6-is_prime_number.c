@@ -23,6 +23,6 @@ return (prime_helper(n, guess + 1));
 int is_prime_number(int n)
 {
 if (n < 0)
-        return (-1);
+	return (0);
 return (prime_helper(n, 0));
 }

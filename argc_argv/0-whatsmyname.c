@@ -1,22 +1,16 @@
 #include <stdio.h>
 
-int main (int argc, char *argv[])
+/**
+ * main - Affiche le nom du programme
+ * @argc: Nombre d'arguments de la ligne de commande
+ * @argv: Tableau des arguments de la ligne de commande
+ *
+ * Return: Toujours 0 (succès)
+ */
+int main(int argc, char *argv[])
 {
-  int count;
 
-  printf ("%s\n",argv[0]);
-
-  if (argc > 1)
-    {
-      for (count = 1; count < argc; count++)
-	{
-	  printf("argv[%d] = %s\n", count, argv[count]);
-	}
-    }
-  else
-    {
-      printf("\n");
-    }
-
-  return 0;
+if (argc > 0)
+printf("%s\n", argv[0]);
+return (0);
 }

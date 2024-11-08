@@ -13,7 +13,9 @@ char a;
 int i;
 a = *argv[0];
 for (i = 0; i < argc; i++)
-printf("%d\n", i);
+{
 a++;
+}
+printf("%d\n", argc - 1);
 return (0);
 }

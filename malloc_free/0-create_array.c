@@ -18,7 +18,7 @@ if (size == 0)
 arr = malloc(size * sizeof(char));
 if (arr == NULL)
 {
-        return (1);
+        return (NULL);
 }
 for (i = 0; i < size; i++)
 {

@@ -18,7 +18,8 @@ if (size == 0)
 arr = malloc(size * sizeof(char));
 if (arr == NULL)
 {
-	return (NULL);
+	printf("Échec de l'allocation de mémoire\n");
+        return (1);
 }
 for (i = 0; i < size; i++)
 {

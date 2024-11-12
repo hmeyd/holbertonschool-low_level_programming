@@ -2,9 +2,9 @@
 #include <stdio.h>
 #include <stdlib.h>
 /**
- * str_concat - fonction qui diplique
- * @s1: 1er le chaine de caractaire à concatiner
- * @s2: 2eme chaine de caractaire à concatiner
+ * alloc_grid - fonction qui diplique
+ * @width: 1er dimmenssion
+ * @height: 2eme dimenssion
  * Return: le chaine de caractaire concatiner
  */
 int **alloc_grid(int width, int height)
@@ -15,7 +15,7 @@ int **alloc_grid(int width, int height)
 	{
 		return (NULL);
 	}
-	arr = malloc(height * sizeof (int *));
+	arr = malloc(height * sizeof(int *));
 	if (arr == NULL)
 		return (0);
 	for (i = 0; i < height; i++)

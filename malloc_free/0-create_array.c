@@ -13,7 +13,7 @@ unsigned int i;
 char *arr;
 if (size == 0)
 {
-	return (0);
+	return (NULL);
 }
 arr = (char *) malloc(size * sizeof(char));
 if (arr == NULL)
@@ -24,6 +24,5 @@ for (i = 0; i < size; i++)
 {
 	arr[i] = c;
 }
-arr[size] = '\0';
 return (arr);
 }

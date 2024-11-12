@@ -25,23 +25,21 @@ char *str_concat(char *s1, char *s2)
 	{
 		size1 = size1 + 1;
 	}
-	arr = (char *)malloc((size + size1 + 1) * sizeof(char));
+	if (size == 0)
+		arr = (char *)malloc((size + 1) * sizeof(char));
+	else if (size1 == 0)
+		arr = (char *)malloc((size1 + 1) * sizeof(char));
+	else
+		arr = (char *)malloc((size + size1 + 1) * sizeof(char));
 	if (arr == NULL)
 		return (NULL);
-	else if (size == 0)
-		arr = s2;
-	else if (size1 == 0)
-		arr = s1;
-	else 
+	for (i = 0; i <= size; i++)
 	{
-		for (i = 0; i < size; i++)
-		{
-			arr[i] = s1[i];
-		}
-		for (j = 0; j <= size1; j++)
-		{
-			arr[j + size] = s2[j];
-		}
+		arr[i] = s1[i];
+	}
+	for (j = 0; j <= size1; j++)
+	{
+		arr[j + size] = s2[j];
 	}
 	arr[size  + size1 + 1] = '\0';
 	return (arr);

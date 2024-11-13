@@ -16,8 +16,8 @@ void *malloc_checked(unsigned int b)
 	arr = malloc(b * sizeof(int));
 	if (arr == NULL)
 	{
-		free(arr);
 		exit(98);
+		free(arr);
 	}
 	return (arr);
 }

@@ -2,9 +2,10 @@
 #include <stdio.h>
 #include <stdlib.h>
 /**
- * str_concat - fonction qui diplique
+ * string_nconcat - fonction qui diplique
  * @s1: 1er le chaine de caractaire à concatiner
  * @s2: 2eme chaine de caractaire à concatiner
+ * @n: longueur
  * Return: le chaine de caractaire concatiner
  */
 char *string_nconcat(char *s1, char *s2, unsigned int n)

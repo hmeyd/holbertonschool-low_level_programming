@@ -12,12 +12,12 @@
  * pointée par d avec les valeurs spécifiées pour name, age et owner.
  * Elle ne fait rien si le pointeur d est NULL.
  */
-
 void init_dog(struct dog *d, char *name, float age, char *owner)
 {
-	if (d == NULL)
-		return;
-	d->name = name;
-	d->age = age;
-	d->owner = owner;
+    if (d == NULL)
+        return;
+
+    d->name = name;
+    d->age = age;
+    d->owner = owner;
 }

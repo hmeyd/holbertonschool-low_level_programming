@@ -1,8 +1,11 @@
 #include <stdio.h>
-#include "calc.h"
-/*
- *
- *
+#include <stdlib.h>
+#include "3-calc.h"
+
+/**
+ * get_op_func - une fonction qui reconnais l'opperateur
+ * @s: l'opperateur
+ * Return: l'operateur or NULL
  */
 int (*get_op_func(char *s))(int, int)
 {
@@ -15,13 +18,14 @@ int (*get_op_func(char *s))(int, int)
 		{NULL, NULL}
 	};
 	int i = 0;
-	while(op_t *ops[i][0] != s)
+
+	while (ops[i].op != NULL)
 	{
+		if (*ops[i].op == s[0] && s[1] == '\0')
+		{
+			return (ops[i].f);
+		}
 		i++;
-	}
-	if (i <= 5)
-	{
-	return (op_t *ops[i][1]);
 	}
 	return (NULL);
 }

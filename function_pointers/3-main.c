@@ -13,7 +13,7 @@ int main(int argc, char *argv[])
 {
 	int Res;
 
-	if (argc > 4)
+	if (argc != 4)
 	{
 		printf("Error\n");
 		exit(98);
@@ -23,7 +23,7 @@ int main(int argc, char *argv[])
 		printf("Error\n");
 		exit(99);
 	}
-	if ((*argv[2] == 57 || *argv[2] == 45) && atoi(argv[3]) == 0)
+	if ((*argv[2] == '/' || *argv[2] == '%') && atoi(argv[3]) == 0)
 	{
 		printf("Error\n");
 		exit(100);

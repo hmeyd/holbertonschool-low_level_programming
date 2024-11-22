@@ -2,10 +2,12 @@
 #include <stdlib.h>
 #include "3-calc.h"
 
+
 /**
- * get_op_func - une fonction qui reconnais l'opperateur
- * @s: l'opperateur
- * Return: l'operateur or NULL
+ * get_op_func - Sélectionne l'opérateur
+ * @s: L'opérateur fourni sous forme de chaîne
+ *
+ * Return: Un pointeur vers la fonction correspondante, ou NULL si non valide
  */
 int (*get_op_func(char *s))(int, int)
 {

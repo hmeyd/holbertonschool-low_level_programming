@@ -1,5 +1,6 @@
 #ifndef FUNCTION_POINTERS_H
 #define FUNCTION_POINTERS_H
+#include <stddef.h>
 /**
  * function_pointers - une structure représentant un chien
  * @name: Le nom du chien, une chaîne de caractères

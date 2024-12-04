@@ -11,7 +11,8 @@ size_t print_list(const list_t *h)
 {
 	int n_noeud = 0;
 	const list_t *current = h;
-	while (current !=NULL)
+
+	while (current != NULL)
 	{
 		n_noeud++;
 		if (current->str == NULL)

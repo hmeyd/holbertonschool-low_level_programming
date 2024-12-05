@@ -13,7 +13,6 @@
  * Description: singly linked list node structure
  */
 
-void _putchar (char c);
 typedef struct list_s
 {
 	char *str;

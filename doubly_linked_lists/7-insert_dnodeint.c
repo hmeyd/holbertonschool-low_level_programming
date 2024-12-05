@@ -1,12 +1,12 @@
 #include "lists.h"
 #include <stdlib.h>
-#include <string.h>
 
 /**
- * insert_dnodeint_at_index - Adds a new node at the end of a linked list
+ * insert_dnodeint_at_index - Inserts a new node at a given position
  * @h: A pointer to the head of the list
- * @n: The string to be added to the new node
- * @idx: l'index de l'insertion
+ * @idx: The index of the list where the new node should be added
+ * @n: The data to be added to the new node
+ *
  * Return: The address of the new node, or NULL if it failed
  */
 dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
@@ -17,27 +17,33 @@ dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 	new_node = malloc(sizeof(dlistint_t));
 	if (new_node == NULL)
 		return (NULL);
+
 	new_node->n = n;
-	if (*h == NULL)
-	{
-		new_node->prev = NULL;
-		new_node->next = NULL;
-		*h = new_node;
-		return (new_node);
-	}
+
+	if (idx == 0)
+		return (add_dnodeint(h, n));
+
 	temp = *h;
-	while (temp)
+	while (temp && nem < idx - 1)
 	{
-		if (nem == idx)
-		{
-			new_node->prev = temp;
-			temp->next = new_node;
-			new_node->next = temp->next;
-			temp->next->prev = new_node;
-			return (new_node);
-			nem++;
-		}
 		temp = temp->next;
+		nem++;
 	}
+
+	if (temp == NULL || (temp->next == NULL && nem + 1 != idx))
+	{
+		free(new_node);
 		return (NULL);
+	}
+
+	new_node->next = temp->next;
+	new_node->prev = temp;
+
+	if (temp->next != NULL)
+		temp->next->prev = new_node;
+
+	temp->next = new_node;
+
+	return (new_node);
 }
+
